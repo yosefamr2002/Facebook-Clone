@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica;
 }
 
 body{
@@ -9,51 +10,71 @@ body{
     background-color: #f2f4f7;
     
 }
-.title{
+.title {
+    margin: auto;
+    width: 100%;
+    margin-top: 45px;
+}
+.title h1{
     color: #106bff;
     text-align: center;
-    margin-top: 5%;
-    font-size: 25px;
+    font-family: Helvetica;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+
 }
 
-.container{
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X Y blur color */
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    margin: auto;
-    margin-top: 1%;
-}
 .container__title{
         text-align: center;
 
 }
 .container__form {
+    background-color: #ffffff;
+    margin: auto;
+    box-shadow: 0 0px 9px 0px rgba(0, 0, 0, 0.2);
+    width: 25rem;
     text-align: center;
     display: flex
 ;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    /* border: 10px solid black; */
+    padding: 1rem
+16px
+ 1rem;
+    border-radius: 6px;
 }
-.container__form__header{
-    padding: 15px;
+.container__form__header {
+    margin: 20px 0px;
+    /* padding: 14px; */
     text-align: center;
 }
+.container__form__header p {
+    font-size: 18px;
+}
+
 .inputs{
     width: 100%;
     display: flex;
     flex-direction: column;
     
 }
-input{
-    height: 45px;
-    border-radius: 9px;
-    margin: 5px 0;
+
+input {
+    margin-bottom: 15px;
+    border: 1px solid #00000029;
+    padding: 14px 16px;
+    height: 55px;
+    border-radius: 6px;
+    /* margin: 5px 0; */
+}
+input::placeholder {
+  font-size: 18px; 
 }
 .login_btn{
+    color: white;
     text-decoration: none;
     background-color: #1877f2;
     border-radius: 6px;
@@ -63,10 +84,29 @@ input{
     width: 100%;
 }
 .Forgotten_link {
-    margin: 10px;
+    font-size: 14px;
+    margin: 18px 0px;
     text-decoration: none;
-
+    color: #3c77f4;
 }
+.hr-with-or {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #0000003a;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    position: relative;
+}
+.hr-with-or span {
+  background: #fff; /* لازم تكون نفس لون الخلفية */
+  padding: 0 15px; /* هنا بتديها margin جوهيا */
+  font-size: 10px;
+  color: #333333a1;
+  font-weight: bold;
+  position: relative;
+  top: 0.6em; /* علشان تنزل على الخط وتقطعه */
+}
+
 
 .create_btn{
       text-decoration: none;
