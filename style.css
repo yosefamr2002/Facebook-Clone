@@ -121,7 +121,7 @@ input::placeholder {
     color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .container {
    .container__form{
     width: 20rem;
